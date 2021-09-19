@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Good Gums</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Roboto&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html"><img class="logo" src="images/GoodGums-logo-white.png" alt="good gums logo" /></a>
+
+
+        <div class="textPopOut">
+            <h1>
+                Good Gums
+            </h1>
+            <h2>
+                your Australian plant nursery
+            </h2>
+
+        </div>
+    </header>
+    <nav>
+
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <p id="thisPage">Order</p>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i> <img id="menu-pic" src="images/GoodGums-logo-grey.png" alt="menu icon"></i>
+            </a>
+
+        </div>
+
+
+
+    </nav>
+
+
+    <main>
+        <aside>
+            <a href="#">
+                <img id="topButton" src="images/up-arrow.png" alt="up arrow to click for top of page" />
+            </a>
+        </aside>
+        <!--
+        1. Form with the method and action attributes set correctly
+        2. Lables
+        3.Text input with <input>
+        4. longer text input with <textarea>
+        5. drop-dom list
+        6. Radio buttons
+        7. check box
+        8. Submit button
+
+        -->
+
+
+        <form id="myForm" method="get" action="response.html">
+            <fieldset>
+                <legend>Good Gums Order Form</legend>
+                <label for="firstName">First name: </label>
+                <br />
+                <input type="text" id="firstName" name="firstName" placeholder="Gwyneth" autofocus required="required" /><br /><br />
+                <label for="lastName">Last name: </label>
+                <br />
+                <input type="text" id="lastName" name="lastName" placeholder="Greenthumb" required="required" /><br />
+                <br />
+
+                <label for="order">Your Order: </label><br />
+                <textarea id="order" name="order" placeholder="enter quantity and type of plant you wish to order" required="required"></textarea>
+                <br /> <br />
+                <label for="shipping">shipping</label>
+                <br />
+                <select id="shipping" name="shipping" required="required">
+                    <option id="empty" value="">Select option...</option>
+                    <option id="standardDelivery" value="standardDelivery">Standard Delivery $32.50</option>
+                    <option id="ExpressDelivery" value="ExpressDelivery">Express Delivery $50.00</option>
+                    <option id="pickUp" value="pickUp">Pickup - FREE</option>
+                </select>
+                <br /><br />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="abc@123.com" title="please enter an email in the following format youremail@youremail.com" />
+                <label for="phone">Phone Number </label>
+                <input id="phone" name="phone" type="text" placeholder="1800123456" pattern="[0-9]{6,20}" title="Enter phone number: digits 0-9, numbers only" required="required" />
+
+
+                <p>How would you prefer us to contact you?</p>
+                <input type="radio" id="phoneNumber" name="prefContact" value="phoneNumber" />
+                <label for="phoneNumber">phone</label><br />
+                <input type="radio" id="emailAddress" name="prefContact" value="emailAddress" />
+                <label for="emailAddress">email</label><br />
+
+                <br />
+
+                <p>Would you like to subscribe to our... </p>
+                <input type="checkbox" id="fortnighly" name="fortnighly" value="fortnighly">
+                <label for="fortnighly"> Fortnightly Newsletter on General Gardening tips</label><br>
+                <input type="checkbox" id="weekly" name="weekly" value="weekly">
+                <label for="weekly">Weekly newsletter about sales and specials</label><br>
+                <input type="checkbox" id="monthly" name="monthly" value="monthly">
+                <label for="monthly">Monthly newsletter all about Australian plants.</label><br>
+                <input type="checkbox" id="occassional" name="occassional" value="occassional">
+                <label for="occassional">Occassional Newsletter (only for special events like Christmas and boxing day sales)</label><br><br><br>
+                <input id="submit" type="submit" value="Submit" />
+            </fieldset>
+
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <ul>
+                <li>
+                    <a href="products.html" title="products">products</a>
+                </li>
+                <li>
+                    <a href="order.html" title="order">Order Now!</a>
+
+                </li>
+                <li>
+                    <a href="about.html" title="about">about</a>
+                </li>
+                <li>
+                    <a href="sitemap.html" title="sitemap">sitemap</a>
+                    <a href="index.html"><img class="logoRightList" src="images/GoodGums-logo-white.png" alt="good gums logo" /></a>
+
+
+                </li>
+
+            </ul>
+            <ul id="noLinkList">
+                <li>
+                    <p>contact us at 1800 123 456</p>
+                </li>
+                <li>
+                    <p>website built by student&#169;</p>   
+                </li>
+            </ul>
+            <div class="valid">
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                             src="http://jigsaw.w3.org/css-validator/images/vcss"
+                             alt="Valid CSS!" />
+                    </a>
+                </p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                             src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                             alt="Valid CSS!" />
+                    </a>
+                </p>
+            </div>
+
+
+        </div>
+    </footer>
+    <script src="response.js"></script>
+
+</body>
+</html>
